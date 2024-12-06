@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Cipher - Gravity Falls</title>
+   
+</head>
+<body>
+
+    <h1>Bill Cipher - Gravity Falls</h1>
+    <img id="personagem" src="dipper.png" alt="Dipper Pines">
+    <p id="mensagem">Passe o mouse sobre Bill Cipher!</p>   
+
+    <script>
+        
+        const personagem = document.getElementById('personagem');
+        const mensagem = document.getElementById('mensagem');
+
+        personagem.onmouseenter = () => mensagem.innerText = "Que tal um mistério?!";
+        personagem.onmouseleave = () => mensagem.innerText = "Estou de olho em tudo!";
+        personagem.onmousemove = () => mensagem.innerText = "Não confie em gnomos!";
+        personagem.onclick = () => mensagem.innerText = "Ei, isso dói!";
+    </script>
+
+</body>
+</html>
