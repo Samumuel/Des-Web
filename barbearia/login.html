@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
 </head>
 <body>
     
+    <div>
+        <form id="formulario">
+            <div class="campos">
+                <label for="Nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="campos">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campos">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+            </div>
+
+            <div class="campos">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+
+        formulario.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+
+            localStorage.setItem('nome', nome);
+            localStorage.setItem('email', email);
+            localStorage.setItem('senha', senha);
+
+            window.location.href = 'paginaPrincipal.html';
+        });
+    </script>
+
 </body>
 </html>

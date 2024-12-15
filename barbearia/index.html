@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Barbearia</title>
 </head>
 <body>
-    <div class="Splash">
-        <div class="image">
-            <img src="imagens/corte.jpg" alt="Splash Screen">
+    
+    <div class="Splash-screen">
+        <div id="content">
+                <img src="imagens/rick1.jpg" alt="Splash Screen image">         
+                <h1>Barbearia do Rick!</h1>
         </div>
-        <div class="text">
-            <h1>Bem Vindo à barbearia do Bap Homet!</h1>
-        </div>
-        <script>
-            setTimeout(()=> {
-                window.location.href = "login.html";
-            }, 5000);
-        </script>
     </div>
+
+    <script>
+
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 5000);
+
+    </script>
+
 </body>
 </html>
