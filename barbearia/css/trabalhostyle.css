@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    flex-direction: row;
+}
+
+.cabecalhoVoltar {
+    background-color: rgb(0, 0, 0);
+}
+
+.botaoVoltar {
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 50px;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.fotoGaleria {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.cartao {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.textoCartao {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: chartreuse;
+    text-align: center;
+}
