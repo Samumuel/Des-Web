@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/principalstyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu" id="menu">&#9776;</div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="agendar.html">Agendar</a></li>
+                <li><a href="trabalhos.html" target="_blank">Trabalhos</a></li>
+                <li><a href="barbeiros.html" target="_blank">Barbeiros</a></li>
+                <li><a href="historico.html" target="_blank">Histórico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="mensagem"></h1>
+
+    <h3>Serviços</h3>
+    <div class="services">
+
+        <div class="service-card">
+            <img src="imagens/cabelo.webp"
+                alt="Cabelo">
+            <a href="#">Cabelo</a>
+        </div>
+        <div class="service-card">
+            <img src="imagens/barba.webp"
+                alt="Barba">
+            <a href="#">Barba</a>
+        </div>
+        <div class="service-card">
+            <img src="imagens/sobrancelha.webp"
+                alt="Sobrancelha">
+            <a href="#">Sobrancelha</a>
+        </div>
+        <div class="service-card">
+            <img src="imagens/cabelo.webp"
+                alt="">
+            <a href="#">Cabelo</a>
+        </div>
+    </div>
+
+    <button class="reservation-btn"><a href="agendar.html">Reservar Agora</a></button>
+
+    <script>
+        const nome = localStorage.getItem('nome') || 'Visitante';
+        const mensagem = document.getElementById('mensagem');
+        mensagem.textContent = `Bem-vindo, ${nome}!`;
+
+        const menuToggle = document.getElementById('menu');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
